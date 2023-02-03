@@ -1,9 +1,9 @@
 extends Node # instancia a classe Node2D
 
-var status = 1
-var vscore = 0
-var x = 1.5 
-var y = 1.5 
+var status = 1 # variável que controla se o jogo está rodando ou não.  
+var vscore = 0 # representa a pontuação do usuário. 
+var x = 4 # determina a velocidade e posição do dragão na horizontal.
+var y = 4 # determina a velocidade e posição do dragão na vertical.
 
 # executa essa função ao carregar o jogo
 func _ready():
@@ -14,7 +14,7 @@ func _ready():
 # executa essa função a cada frame (60 FPS)
 func _process(delta):
 	
-	if status == 1: # jogando
+	if status == 1 : # jogando
 		
 		# movimenta o cenário do fundo
 		$background.position.x -= 1*x
