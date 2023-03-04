@@ -1,0 +1,86 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Node2D.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 71.0
+margin_top = 102.0
+margin_right = 189.0
+margin_bottom = 145.0
+text = "Botão 1 "
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 534.0
+margin_top = 96.0
+margin_right = 652.0
+margin_bottom = 139.0
+text = "Botão 2"
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 69.0
+margin_top = 373.0
+margin_right = 187.0
+margin_bottom = 416.0
+text = "Botão 3"
+
+[node name="LineEditnum" type="LineEdit" parent="."]
+margin_left = 202.0
+margin_top = 51.0
+margin_right = 400.0
+margin_bottom = 118.0
+
+[node name="LineEditnome" type="LineEdit" parent="."]
+margin_left = 203.0
+margin_top = 157.0
+margin_right = 401.0
+margin_bottom = 224.0
+
+[node name="textoNumero" type="Label" parent="."]
+margin_left = 261.0
+margin_top = 30.0
+margin_right = 345.0
+margin_bottom = 61.0
+text = "Número"
+align = 1
+
+[node name="textoNome" type="Label" parent="."]
+margin_left = 260.0
+margin_top = 133.0
+margin_right = 344.0
+margin_bottom = 164.0
+text = "Nome"
+align = 1
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+margin_left = 206.0
+margin_top = 364.0
+margin_right = 371.0
+margin_bottom = 449.0
+color = Color( 0.168627, 0.121569, 0.290196, 1 )
+
+[node name="saidaButton3" type="Label" parent="."]
+margin_left = 217.0
+margin_top = 373.0
+margin_right = 363.0
+margin_bottom = 439.0
+align = 1
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 662.0
+margin_top = 66.0
+margin_right = 1000.0
+margin_bottom = 149.0
+color = Color( 0.12549, 0.121569, 0.376471, 1 )
+
+[node name="saidaButton2" type="Label" parent="."]
+margin_left = 673.0
+margin_top = 74.0
+margin_right = 988.0
+margin_bottom = 137.0
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
