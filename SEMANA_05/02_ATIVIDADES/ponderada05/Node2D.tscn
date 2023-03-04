@@ -55,6 +55,13 @@ text = "Nome"
 align = 1
 
 [node name="ColorRect2" type="ColorRect" parent="."]
+margin_left = 675.0
+margin_top = 64.0
+margin_right = 1013.0
+margin_bottom = 147.0
+color = Color( 0.12549, 0.121569, 0.376471, 1 )
+
+[node name="ColorRect3" type="ColorRect" parent="."]
 margin_left = 206.0
 margin_top = 364.0
 margin_right = 371.0
@@ -68,18 +75,12 @@ margin_right = 363.0
 margin_bottom = 439.0
 align = 1
 
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_left = 662.0
-margin_top = 66.0
-margin_right = 1000.0
-margin_bottom = 149.0
-color = Color( 0.12549, 0.121569, 0.376471, 1 )
-
 [node name="saidaButton2" type="Label" parent="."]
-margin_left = 673.0
-margin_top = 74.0
-margin_right = 988.0
-margin_bottom = 137.0
+margin_left = 678.0
+margin_top = 70.0
+margin_right = 1004.0
+margin_bottom = 141.0
+autowrap = true
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
